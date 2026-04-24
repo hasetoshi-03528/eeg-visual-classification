@@ -10,6 +10,21 @@ Brain-Computer Interface (BCI) system. EEG data was recorded from a
 single subject while viewing visual stimuli (images and text), then 
 classified using EEGNet, a compact CNN designed for EEG-based BCI tasks.
 
+## 日本語概要
+
+同済大学（中国）卒業論文プロジェクト（2023年）。
+
+64チャンネル脳波キャップを用いて自身のEEG信号を計測・記録し、
+EEGNet（PyTorch）による視覚刺激分類システムを構築。
+
+視覚刺激（画像・テキスト）を見ているときの脳波から
+カテゴリを分類するBCI（Brain-Computer Interface）研究。
+
+2クラス分類で最高81.0%の精度を達成。
+
+### 技術スタック
+Python / PyTorch / MNE / NumPy / SciPy
+
 ## Experiment Design
 
 - **Subject**: Single participant (self-recorded)
