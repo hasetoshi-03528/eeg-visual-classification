@@ -93,7 +93,7 @@ classify than image stimuli, whose accuracy is close to chance on average.
 
 ## Tech Stack
 
-- Python, PyTorch, NumPy, SciPy, MNE, Matplotlib
+- Python, PyTorch, NumPy, SciPy, MNE, Matplotlib, Pandas
 
 ## Data
 
