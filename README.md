@@ -70,7 +70,7 @@ not representative of typical performance.
 - Image 2-class accuracy is near chance on average, and 27 of 66 pairs
   are below 50%, which suggests unstable evaluation (e.g., distribution
   shift between train/test sessions). The train/test split unit
-  (session-wise or epoch-wise) is [state it here].
+  (session-wise or epoch-wise) is [The split is session-wise (12 sessions for training, 2 for testing).].
 - Text stimuli were cut into overlapping windows (0.25 s stride); if the
   split was done at the window level, train/test leakage is possible.
 
