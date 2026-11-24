@@ -49,15 +49,30 @@ Python / PyTorch / MNE / NumPy / SciPy
 - Model: EEGNet (PyTorch)
 - Train/test split: 6:1, Epoch: 200, Batch size: 32, LR: 3e-4
 
-## Results (highlights)
+## Results
 
-| Task | Accuracy |
-|------|----------|
-| 2-class image classification | up to 81.0% (best pair) |
-| 4-class (category-level) image | 26.3% |
-| 2-class noun classification | up to 81.0% (best pair) |
-| 4-class (category-level) noun | 40.7% |
-| 24-class image+noun combined | 63.2% |
+All results are from a single subject (n = 1, self-recorded, 14 sessions).
+
+| Task | Accuracy | Chance level |
+|---|---|---|
+| Image, 2-class (mean of 66 pairs) | 51.3% (best 75.0%: Jackie Chan vs. Watermelon; worst 20.5%) | 50% |
+| Noun, 2-class (mean of 66 pairs) | 62.8% (best 81.0%: Stadium vs. Tokyo Tower; worst 32.5%) | 50% |
+| Image, 4-category | 26.3% | 25% |
+| Noun, 4-category | 40.7% | 25% |
+| Image + Noun, 24-class | 63.2% | ~4.2% |
+
+The "best" values are the maximum over 66 pairwise comparisons and are
+not representative of typical performance.
+
+## Limitations
+
+- Single subject; results do not generalize.
+- Image 2-class accuracy is near chance on average, and 27 of 66 pairs
+  are below 50%, which suggests unstable evaluation (e.g., distribution
+  shift between train/test sessions). The train/test split unit
+  (session-wise or epoch-wise) is [state it here].
+- Text stimuli were cut into overlapping windows (0.25 s stride); if the
+  split was done at the window level, train/test leakage is possible.
 
 ## Tech Stack
 
