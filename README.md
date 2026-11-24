@@ -47,7 +47,7 @@ Python / PyTorch / MNE / NumPy / SciPy
 - Preprocessing: Bandpass filter (1–60 Hz), notch filter (50 Hz), ICA
   (artifact removal for EOG/ECG)
 - Model: EEGNet (PyTorch)
-- Train/test split: 6:1, Epoch: 200, Batch size: 32, LR: 3e-4
+- Train/test split: 6:1 (session-wise), Epoch: 200, Batch size: 32, LR: 3e-4
 
 ## Results
 
